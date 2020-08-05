@@ -1,0 +1,159 @@
+html{
+    font-size:40.5%;
+box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+.header{
+	margin-left:2rem;
+	height:100vh;
+	background:linear-gradient(to top, rgba(0,0,0,10),rgba(0,0,0,10));
+	background-size:cover;
+	border:.5rem solid #deaa86;
+	width:152rem;
+	
+}
+
+.brand{
+	display:flex;
+	cursor:pointer;
+}
+
+.Quiz-heading{
+	margin-left:5rem;
+	font-family:sans;
+	font-size:5rem;
+	font-weight:500rem;
+	color:#deaa86;
+	letter-spacing:.2rem;
+	
+}
+
+.banner{
+	color:#dddddd;
+	height:65rem;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	text-shadow: 1px 1px white;
+}
+
+.banner-heading{
+	margin-top:25rem;
+	font-family:sans;
+	font-size:7rem;
+	font-weight:400;
+	margin-bottom:0;
+	animation:anim 2s;
+}
+
+.banner-paragraph{
+	font-size:3.5rem;
+	font-weight:300;
+	animation:anim 1.5s .5s backwards;
+}
+.header-imagee{
+	flex-direction:row;
+	display:flex;	
+}
+
+.image{
+	margin-top:15rem;
+	margin-left:5rem;
+	width:18rem;
+	background-color:white;
+	height:22rem;
+	box-shadow:0 3rem 6rem rgba(0,0,0,.4);
+	border-radius:.4rem;
+	border:.1rem solid white;
+	border-radius:1rem;
+	cursor:pointer;
+	animation:anim 1s 2s backwards;
+}
+
+.image:hover{
+	background:linear-gradient(to left,#2BAE66FF,#FCF6F5FF);
+	cursor:pointer;
+}
+
+.image:active{
+	transform:translateY(.2rem);
+}
+
+.input_text{
+	cursor:pointer;
+	color:black;
+	height:3.5rem;
+	outline:none;
+}
+
+.banner-button{
+	margin-top:20rem;
+	width:21rem;
+	padding:1.2rem 2rem;
+	color:white;
+	letter-spacing:.1rem;
+	border:none;
+	border-radius:10rem;
+	outline:none;
+	background:linear-gradient(to right,#FF6F61FF,#C5299BFF);
+	cursor:pointer;
+	animation:anim 1s 1s backwards;
+}
+
+.banner-button:hover{
+	background:linear-gradient(to left,#FF3EA5FF,#EDFF00FF,#00A4CCFF);
+	cursor:pointer;
+	color:black;
+}
+
+.banner-button:active{
+	transform:translateY(.10rem);
+}
+
+@keyframes anim{
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+@media(max-width:500px){
+	.header{
+		width:60rem;
+		height:120rem;
+	}
+	.Quiz-heading{
+		margin-left:1rem;
+		font-size:4rem;
+	}
+	.banner{
+		height:80%;
+		margin-top:-10rem;
+	}
+	.banner-heading{
+		font-size:5rem;
+	}
+	.banner-paragraph{
+		font-size:3rem;
+	}
+	.header-imagee{
+	flex-direction:row;
+	display:flex;	
+	}
+	.image{
+		width:8rem;
+		margin-left:2rem;
+		height:12rem;
+	}
+	.text_box{
+		display:row;
+	}
+}
